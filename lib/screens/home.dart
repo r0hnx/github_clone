@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 // TODO: Make a home clone from the github app
@@ -8,10 +9,34 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _currentstate=0;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        fixedColor: Colors.blue,
+        currentIndex: _currentstate,
+        items: [
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.home),
+            label:'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.notifications),
+            label:'Notifications',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label:'Explore'
+          )
+        ],
+        onTap: (index){
+          setState(() {
+            _currentstate=index;
+          });
+        },
+      ),
     );
   }
 }
