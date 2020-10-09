@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github_clone/screens/screens.dart';
 
-import 'screens/home.dart';
-import 'screens/screens.dart';
-
 void main() {
   runApp(MyApp());
 }
