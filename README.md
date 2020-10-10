@@ -8,6 +8,10 @@ Support open source software by participating in [Hacktoberfest](https://hacktob
 
 Kindly consider leaving a :star: if you like the repository.
 
+<img src="https://cdn.dribbble.com/users/279051/screenshots/11103636/media/cce2826fcc7016123b262302266b09ef.png"/>
+
+For detailed design guidelines : Refer to https://mobbin.design/apps/github
+
 ## Getting Started
 * Fork it.
 
