@@ -78,14 +78,13 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             icon: new Icon(Icons.home),
-            title: Text('Home'),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.notifications),
-            title: Text('Notifications'),
+            label: 'Notifications',
           ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.search), title: Text('Explore'))
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Explore')
         ],
         onTap: (index) {
           setState(() {
@@ -177,7 +176,7 @@ class _HomePageState extends State<HomePage> {
         decoration: BoxDecoration(
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.circular(10.0),
-          color: Color.fromARGB(200,214, 215, 219),
+          color: Color.fromARGB(200, 214, 215, 219),
         ),
         child: Padding(
           padding: const EdgeInsets.all(20.0),
